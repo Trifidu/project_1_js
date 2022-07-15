@@ -35,12 +35,10 @@ function detectPersonalLevel() {
   }
 }
 
-// detectPersonalLevel();
-
 function rememberMyMovies() {
   for (let i = 0; i < 2; i++) {
-    const lastMovie = prompt("One of the last watched movie", ""),
-      stars = prompt("Rate this movie", "");
+    const lastMovie = prompt("One of the last watched movie", "").trim(),
+      stars = prompt("Rate this movie", "").trim();
     if (
       lastMovie != null &&
       stars != null &&
@@ -57,15 +55,11 @@ function rememberMyMovies() {
   }
 }
 
-// rememberMyMovies();
-
 function showMyDB(hidden) {
   if (!hidden) {
     console.log(personalMovieDB);
   }
 }
-
-// showMyDB(personalMovieDB.privat);
 
 function writeYourGenres() {
   for (let i = 0; i < 3; i++) {
@@ -75,5 +69,7 @@ function writeYourGenres() {
   }
 }
 
+// detectPersonalLevel();
+// rememberMyMovies();
 writeYourGenres();
 showMyDB(personalMovieDB.privat);
