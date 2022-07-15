@@ -66,7 +66,9 @@ const personalMovieDB = {
       //   console.log(`The favorite genre #${i + 1} - is ${item}`);
       // });
 
-      let genres = prompt(`Enter your favorite genres separated by commas`);
+      let genres = prompt(
+        `Enter your favorite genres separated by commas`
+      ).toLowerCase();
       if (genres === "" || genres == null) {
         console.log("error");
         i--;
